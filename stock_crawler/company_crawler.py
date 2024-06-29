@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd 
 
-market_types=["1", "2", "3", "5", "7", "A", "C", "M"]
+market_types=["1", "2", "3", "5", "7", "A", "C", "E", "M"]
 
 for market_type in market_types:
     url=f"https://isin.twse.com.tw/isin/class_main.jsp?owncode=&stockname=&isincode=&market={market_type}&issuetype=&industry_code=&Page=1&chklike=Y"
